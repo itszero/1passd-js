@@ -1,0 +1,16 @@
+{
+  "name": "1passd",
+  "productName": "1passd",
+  "description": "1Password daemon for Linux",
+  "version": "0.0.1",
+  "author": "Zero Cho <itszero@gmail.com>",
+  "main": "background.js",
+  "dependencies": {
+    "babel-runtime": "^6.9.2",
+    "fs-jetpack": "^0.9.0",
+    "react": "^15.2.1",
+    "react-addons-css-transition-group": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "packageNameTemplate": "{{name}}-v{{version}}-{{platform}}-{{arch}}"
+}

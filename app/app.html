@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>1passd</title>
+    <script src="helpers/context_menu.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+    <style type="text/css">
+html, body, #react-root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+}
+
+.unlock-enter {
+  transform: translateY(-100%);
+}
+
+.unlock-enter.unlock-enter-active {
+  transform: translateY(0);
+  transition: transform 300ms ease-out;
+}
+
+.unlock-leave {
+  transform: translateY(0);
+}
+
+.unlock-leave.unlock-leave-active {
+  transform: translateY(-100%);
+  transition: transform 300ms ease-out;
+}
+
+.unlock-error {
+  animation: error-pulse 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes error-pulse {
+  0% { transform: scale(1.0, 1.0); color: #000000; }
+  30% { transform: scale(0.8, 0.8); }
+  50% { color: #FF0000; }
+  70% { transform: scale(1.1, 1.1); }
+  100% { transform: scale(1.0, 1.0); color: #000000; }
+}
+
+.keychain-item:hover {
+  background-color: #EEE;
+}
+    </style>
+</head>
+<body>
+    <div id="react-root">
+    </div>
+</body>
+</html>
